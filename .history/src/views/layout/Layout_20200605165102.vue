@@ -9,8 +9,8 @@
 
 <script>
 import NavHeader from '../../components/navHeader/NavHeader';
-import NavRighter from '../../components/navRighter/NavRighter';
-import NavBelow from '../../components/navBelow/NavBelow';
+import NavRighter from '../../components/navHeader/NavRighter';
+import NavBelow from '../../components/navHeader/NavBelow';
  export default {
    name: 'Layout',
    props: {

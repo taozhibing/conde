@@ -1,6 +1,6 @@
 <template>
   <div class="dv">
-    <div style="width: 350px">
+    <div style="width: 400px">
       <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px">
         <el-form-item label="用户名" prop="username">
           <el-input v-model="ruleForm.username"></el-input>
@@ -111,6 +111,7 @@ export default {
   align-content: center;
   justify-content: center;
   margin-top:200px;
+  background: #999
   ;
 }
 </style>

@@ -1,21 +1,19 @@
 <template>
-  <div class="dv">
-    <div style="width: 350px">
-      <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px">
-        <el-form-item label="用户名" prop="username">
-          <el-input v-model="ruleForm.username"></el-input>
-        </el-form-item>
-        <el-form-item label="密码" prop="password">
-          <el-input v-model="ruleForm.password" show-password></el-input>
-        </el-form-item>
-        <el-form-item label="确认密码" prop="rePwd">
-          <el-input v-model="ruleForm.rePwd" show-password></el-input>
-        </el-form-item>
-        <el-form-item>
-          <el-button type="primary" @click="login">登录</el-button>
-        </el-form-item>
-      </el-form>
-    </div>
+  <div style="width: 400px" class="dv">
+    <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px">
+      <el-form-item label="用户名" prop="username">
+        <el-input v-model="ruleForm.username"></el-input>
+      </el-form-item>
+      <el-form-item label="密码" prop="password">
+        <el-input v-model="ruleForm.password" show-password></el-input>
+      </el-form-item>
+      <el-form-item label="确认密码" prop="rePwd">
+        <el-input v-model="ruleForm.rePwd" show-password></el-input>
+      </el-form-item>
+      <el-form-item>
+        <el-button type="primary" @click="login">登录</el-button>
+      </el-form-item>
+    </el-form>
   </div>
 </template>
 
@@ -110,7 +108,5 @@ export default {
   display: flex;
   align-content: center;
   justify-content: center;
-  margin-top:200px;
-  ;
 }
 </style>

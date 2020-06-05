@@ -1,16 +1,13 @@
 <template>
  <div>
-<nav-header></nav-header>
-<nav-righter></nav-righter>
-<nav-below></nav-below>
-<router-view></router-view>
+
  </div>
 </template>
 
 <script>
 import NavHeader from '../../components/navHeader/NavHeader';
-import NavRighter from '../../components/navRighter/NavRighter';
-import NavBelow from '../../components/navBelow/NavBelow';
+import NavRighter from '../../components/navHeader/NavRighter';
+import NavBelow from '../../components/navHeader/NavBelow';
  export default {
    name: 'Layout',
    props: {

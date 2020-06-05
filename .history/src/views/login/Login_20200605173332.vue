@@ -1,7 +1,7 @@
 <template>
   <div class="dv">
-    <div style="width: 350px">
-      <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px">
+    <div style="width: 400px">
+      <el-form :model="ruleForm" :rules="rules" ref="ruleForm" >
         <el-form-item label="用户名" prop="username">
           <el-input v-model="ruleForm.username"></el-input>
         </el-form-item>
