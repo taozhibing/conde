@@ -34,24 +34,9 @@ Vue.use(VueRouter)
     ]
   },
   {
-    path: '/login',
-    name: 'Login',
-    component: () => import('../views/login/Login'),
-    meta: {
-      title: '登录页'
-    }
-  },
-  {
     path: '/about',
     name: 'About',
     component: () => import( '../views/About.vue')
-  },
-  {
-    path: '*',
-    component: () => import('../views/err/Err'),
-    meta: {
-      title: '错误页'
-    }
   }
 ]
 

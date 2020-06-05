@@ -36,22 +36,12 @@ Vue.use(VueRouter)
   {
     path: '/login',
     name: 'Login',
-    component: () => import('../views/login/Login'),
-    meta: {
-      title: '登录页'
-    }
+    component: () => import('../views/login/Login')
   },
   {
     path: '/about',
     name: 'About',
     component: () => import( '../views/About.vue')
-  },
-  {
-    path: '*',
-    component: () => import('../views/err/Err'),
-    meta: {
-      title: '错误页'
-    }
   }
 ]
 
