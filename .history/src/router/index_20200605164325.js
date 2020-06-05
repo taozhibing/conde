@@ -62,6 +62,11 @@ const router = new VueRouter({
 })
 router.beforeEach((to, from, next) => {
   document.title = to.meta.title
-  next()
+  let user = JSON.parse(localStorage.getItem('user'))
+  if (whitePath.includes(to.path)) {
+    next()
+  } else {
+    user ? next() : next('/login')
+  }
 })
 export default router
