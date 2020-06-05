@@ -69,9 +69,9 @@ export default {
         ],
         rePwd: [
           {
-            required: true,
             validator: validatePass,
-            trigger: "blur"
+            trigger: "blur",
+
           }
         ]
       }
